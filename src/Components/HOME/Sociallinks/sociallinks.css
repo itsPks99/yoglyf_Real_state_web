@@ -1,0 +1,38 @@
+.Sociallinks {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  min-height: 40px;
+  margin-left: auto;
+  width: auto;
+
+  /* position: fixed; */
+}
+
+@media screen and (max-width: 1024px) {
+  .Sociallinks {
+      display: none;
+  }
+}
+
+.social-icons {
+  display: flex;
+  gap: 30px;
+  padding-left: 15px;
+}
+
+.social-icons a {
+  color: black;
+  font-size: 19px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f0a500;
+}
+
+

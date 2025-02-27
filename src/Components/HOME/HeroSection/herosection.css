@@ -1,0 +1,84 @@
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  width: 98vw;
+  height: calc(100vh - 150px); 
+  margin-top: 150px; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make sure images fully cover the section */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover;  */
+  position: absolute;
+  top: 0;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.hero-image.active {
+  opacity: 1;
+}
+
+/* Navigation buttons */
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.prev-button {
+  left: 15px; 
+}
+
+.next-button {
+  right: 15px; 
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .hero-section {
+    height: 100vh; 
+    margin-top: 0; 
+  }
+
+  .hero-image {
+    object-fit: cover; 
+  }
+}
+
+@media (max-width: 768px) {
+  .prev-button,
+  .next-button {
+    padding: 10px 14px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .prev-button,
+  .next-button {
+    padding: 8px 12px;
+    font-size: 18px;
+  }
+}

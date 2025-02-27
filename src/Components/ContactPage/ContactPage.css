@@ -1,0 +1,165 @@
+/* ContactUs.css */
+
+/* Global styles */
+.contact-page {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #333;
+    margin-top: 78px;
+  }
+  
+  /* Section 1: Contact Header */
+  .contact-header-section {
+    text-align: center;
+    
+  }
+  
+  .contact-header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #2e3192;
+  }
+  
+  .contact-header-content p {
+    font-size: 1.2rem;
+  }
+  
+  /* Section 2: Contact Information */
+  .contact-info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #f4f4f4;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .contact-page{
+      margin-top: 150px;
+    }
+    .contact-info-section {
+      padding: 60px 20px;
+    }
+  }
+  
+  .contact-info-box {
+    width: 50%;
+  }
+  
+  .contact-info-box h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2e3192;
+  }
+  
+  .contact-info-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info-box li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+  
+  .contact-info-box a {
+    color: #2e3192;
+    text-decoration: none;
+  }
+  
+  .contact-info-image {
+    width: 45%;
+  }
+  
+  .contact-info-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Section 3: Contact Form */
+  .contact-form-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .contact-form-section h2 {
+    font-size: 2rem;
+    color: #2e3192;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 60%;
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #2e3192;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+  .contact-form button {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #cca300;
+  }
+  
+  /* Section 4: Contact Map */
+  .contact-map-section {
+    background-color: #2058a5;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact-map-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color : white;
+  }
+  
+  .contact-map-section iframe {
+    border: 5px solid #FFD700;
+    border-radius: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-info-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-info-box, .contact-info-image {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+    }
+  }
+  
