@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "node src/backend/server.js",
-    "vercel-build": "npm install && vite build"
+    "vercel-build": "vite build"
   },
   "dependencies": {
     "body-parser": "^1.20.3",
